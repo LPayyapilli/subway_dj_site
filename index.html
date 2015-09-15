@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SUBWAY DJ</title>
+    <meta name="author" content="gyurisc">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.gridster.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section class="demo">
+      <div class="gridster">
+        <ul>
+          <li data-row="1" data-col="1" data-sizex="2" data-sizey="3" style="border-radius:25px;">
+            <br>
+              <span>
+                <img src="assets/images/subwaylogo.jpg" style="height:45%;width:90%;border-radius:25px;" alt="" />
+              </span>
+            <br>
+            <br>
+            <div class="ipodbutton list">
+              <ul>
+                <li id="pause" class="fa fa-pause fa-2x"></li>
+                <br>
+                <li id="backward" class="fa fa-fast-backward fa-2x"></li>
+                <li id="forward" class="fa fa-fast-forward fa-2x"></li>
+                <br>
+                <li id="play" class="fa fa-play fa-2x"></li>
+              </ul>
+            </div>
+          </li>
+          <li data-row="1" data-col="1" data-sizex="3" data-sizey="3"></li>
+          <li data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="list">
+            <a href="https://www.facebook.com/djnaveh" target="_blank" class="fa fa-facebook fa-4x list"></a>
+          </li>
+          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="list">
+            <a href="https://soundcloud.com/subway-dj" target="_blank" class="fa fa-soundcloud fa-4x list"></a>
+          </li>
+          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="list">
+            <a href="https://instagram.com/subwaydj" target="_blank" class="fa fa-instagram fa-4x list"></a>
+          </li>
+          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="list">
+            <a href="https://venmo.com/?txn=pay&recipients=SubwayDJ&audience=public" target="_blank" class="fa fa-money fa-4x list"></a>
+          </li>
+          <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="list">
+            <a href="https://twitter.com/Subway_DJ" target="_blank" class="fa fa-twitter fa-4x list"></a>
+          </li>
+          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="list">
+            <a href="http://subwaydj.tumblr.com/" target="_blank" class="fa fa-tumblr fa-4x list"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script type="text/javascript" src="assets/jquery.js"></script>
+    <script type="text/javascript" src="assets/jquery.gridster.js" charster="utf-8"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+      var gridster;
+
+      $(function() {
+        gridtster = $(".gridster > ul").gridster({
+          widget_margins: [10, 10],
+          widget_base_dimensions: [140, 140],
+          min_cols: 6
+        }).data('gridster');
+        $(".list").hover(
+       function(){ $(this).addClass('fa-spin') },
+       function(){ $(this).removeClass('fa-spin') }
+        )
+      });
+    </script>
+  </body>
+</html>
