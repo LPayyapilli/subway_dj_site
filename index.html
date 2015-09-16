@@ -11,14 +11,14 @@
     <section class="demo">
       <div class="gridster">
         <ul>
-          <li data-row="1" data-col="1" data-sizex="2" data-sizey="3" style="border-radius:25px;">
+          <li data-row="1" data-col="1" data-sizex="2" data-sizey="3" style="border-radius:25px;" class="ipod">
             <br>
               <span>
                 <img src="assets/images/subwaylogo.jpg" style="height:45%;width:90%;border-radius:25px;" alt="" />
               </span>
             <br>
             <br>
-            <div class="ipodbutton list">
+            <div class="ipodbutton">
               <ul>
                 <li id="pause" class="fa fa-pause fa-2x"></li>
                 <br>
@@ -30,23 +30,23 @@
             </div>
           </li>
           <li data-row="1" data-col="1" data-sizex="3" data-sizey="3"></li>
-          <li data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="list">
-            <a href="https://www.facebook.com/djnaveh" target="_blank" class="fa fa-facebook fa-4x list"></a>
+          <li data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="link">
+            <a href="https://www.facebook.com/djnaveh" target="_blank" class="fa fa-facebook fa-4x listlink"></a>
           </li>
-          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="list">
-            <a href="https://soundcloud.com/subway-dj" target="_blank" class="fa fa-soundcloud fa-4x list"></a>
+          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="link">
+            <a href="https://soundcloud.com/subway-dj" target="_blank" class="fa fa-soundcloud fa-4x listlink"></a>
           </li>
-          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="list">
-            <a href="https://instagram.com/subwaydj" target="_blank" class="fa fa-instagram fa-4x list"></a>
+          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="link">
+            <a href="https://instagram.com/subwaydj" target="_blank" class="fa fa-instagram fa-4x listlink"></a>
           </li>
-          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="list">
-            <a href="https://venmo.com/?txn=pay&recipients=SubwayDJ&audience=public" target="_blank" class="fa fa-money fa-4x list"></a>
+          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="link">
+            <a href="https://venmo.com/?txn=pay&recipients=SubwayDJ&audience=public" target="_blank" class="fa fa-money fa-4x listlink"></a>
           </li>
-          <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="list">
-            <a href="https://twitter.com/Subway_DJ" target="_blank" class="fa fa-twitter fa-4x list"></a>
+          <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="link">
+            <a href="https://twitter.com/Subway_DJ" target="_blank" class="fa fa-twitter fa-4x listlink"></a>
           </li>
-          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="list">
-            <a href="http://subwaydj.tumblr.com/" target="_blank" class="fa fa-tumblr fa-4x list"></a>
+          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="link">
+            <a href="http://subwaydj.tumblr.com/" target="_blank" class="fa fa-tumblr fa-4x listlink"></a>
           </li>
         </ul>
       </div>
@@ -63,7 +63,7 @@
           widget_base_dimensions: [140, 140],
           min_cols: 6
         }).data('gridster');
-        $(".list").hover(
+        $(".listlink").hover(
        function(){ $(this).addClass('fa-spin') },
        function(){ $(this).removeClass('fa-spin') }
         )

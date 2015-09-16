@@ -15,7 +15,7 @@ ul, ol {
     padding: 7.5em 0 7.5em;
     background-image: url(../images/subwaydjprof.jpg);
     background-size: 100%;
-    background-position: fixed;
+    background-position: fixed absolute;
     background-repeat: no-repeat;
 
 }
@@ -24,7 +24,7 @@ ul, ol {
 .gridster {
     width: 1200px;
     margin: 0 auto;
-    opacity: .7;
+    opacity: .5;
     -webkit-transiton: opacity .6s;
     -moz-transition: opacity .6s;
     -o-transition: opacity .6s;
@@ -45,10 +45,11 @@ ul, ol {
 }
 
 .gridster .gs_w a {
-  margin-top: 40px;
+  padding: 40px;
+  display: block;
 }
 .gridster:hover {
-  opacity: 1;
+  opacity: .9;
 }
 .ipodbutton {
   height:40%;
@@ -69,7 +70,14 @@ li.gs_w a{
 }
 
 li.gs_w:hover {
-  opacity: .7;
+  opacity: .5;
+  border-color: #663399;
+  border-width: 2px;
+  background-color: black;
+}
+li.ipod.gs_w:hover {
+  background-color: white;
+  opacity: .8;
 }
 li#pause.fa.fa-pause.fa-2x {
   text-align: center;
