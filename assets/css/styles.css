@@ -3,6 +3,10 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #2c3e50;
     margin: 0 auto;
+    background-image: url(../images/subwaydjprof.jpg);
+    background-size: 100%;
+    background-position: fixed absolute;
+    background-repeat: no-repeat;
 }
 
 ul, ol {
@@ -33,20 +37,20 @@ ul, ol {
 }
 
 .gridster .gs_w {
-    background: #FFFFFF;
+    background: black;
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.8);
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
     text-align: center;
     padding: 5px;
-    border: 2px solid #c0392b;
 }
 .gridster img {
-  border: 2px solid #c0392b;
+
 }
 
 .gridster .gs_w a {
-  padding: 40px;
+  padding: 10px;
   display: block;
+  background-color:black;
 }
 .gridster:hover {
   opacity: .9;
@@ -62,21 +66,22 @@ ul, ol {
 }
 ul {
   padding:0;
-  color:#e74c3c;
+  color:#DB0A5B;;
 }
 li.gs_w a{
   text-decoration: none;
-  color:#e74c3c;
+  color:#DB0A5B;
+}
+li.gs_w a:hover{
+  color:purple;
 }
 
 li.gs_w:hover {
-  opacity: .5;
-  border-color: #663399;
-  border-width: 2px;
+  opacity: .9;
   background-color: black;
 }
 li.ipod.gs_w:hover {
-  background-color: white;
+  background-color: black;
   opacity: .8;
 }
 li#pause.fa.fa-pause.fa-2x {
@@ -96,4 +101,31 @@ li#play.fa.fa-play.fa-2x {
   text-align: center;
   margin-top: 19%;
   margin-left:3%;
+}
+section.demo {
+  padding-top:20px;
+}
+li#col3.link.gs_w {
+  margin-top: 500px;
+  margin-left: 400px;
+}
+.eventbutton {
+  font-size: 1em;
+  padding: 5px;
+  margin: 10px;
+  background-color: black;
+  border:none;
+  color:#DB0A5B;
+}
+.eventname {
+  margin: 0;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+  color:#DB0A5B;
+}
+
+.eventlist {
+  font-family: "consolas";
 }

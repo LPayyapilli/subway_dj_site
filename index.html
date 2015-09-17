@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>SUBWAY DJ</title>
-    <meta name="author" content="gyurisc">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.gridster.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -11,42 +10,31 @@
     <section class="demo">
       <div class="gridster">
         <ul>
-          <li data-row="1" data-col="1" data-sizex="2" data-sizey="3" style="border-radius:25px;" class="ipod">
-            <br>
+          <li data-row="1" data-col="1" data-sizex="5" data-sizey="3" id="col1" style="margin:0;padding:0;border:none;">
               <span>
-                <img src="assets/images/subwaylogo.jpg" style="height:45%;width:90%;border-radius:25px;" alt="" />
+                <img src="assets/images/subwaylogo1.jpg" alt="" style="height:100%;width:100%;margin-bottom:295px;padding:0;"/>
+                <div style="height:68px;width:100%;background-color:black;margin-top:0;padding:3px;">
+                    <h4 class="eventlist">DANCE PARTYYYYYYY @Harvard Square 7pm TONIGHT!!!!</h4>
+                </div>
               </span>
-            <br>
-            <br>
-            <div class="ipodbutton">
-              <ul>
-                <li id="pause" class="fa fa-pause fa-2x"></li>
-                <br>
-                <li id="backward" class="fa fa-fast-backward fa-2x"></li>
-                <li id="forward" class="fa fa-fast-forward fa-2x"></li>
-                <br>
-                <li id="play" class="fa fa-play fa-2x"></li>
-              </ul>
-            </div>
           </li>
-          <li data-row="1" data-col="1" data-sizex="3" data-sizey="3"></li>
-          <li data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="link">
-            <a href="https://www.facebook.com/djnaveh" target="_blank" class="fa fa-facebook fa-4x listlink"></a>
+          <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="link" id="col3">
+            <a href="https://www.facebook.com/djnaveh" target="_blank" class="fa fa-facebook fa-2x listlink"></a>
           </li>
-          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="link">
-            <a href="https://soundcloud.com/subway-dj" target="_blank" class="fa fa-soundcloud fa-4x listlink"></a>
+          <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="link" id="col3">
+            <a href="https://soundcloud.com/subway-dj" target="_blank" class="fa fa-soundcloud fa-2x listlink"></a>
           </li>
-          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="link">
-            <a href="https://instagram.com/subwaydj" target="_blank" class="fa fa-instagram fa-4x listlink"></a>
+          <li data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="link" id="col3">
+            <a href="https://instagram.com/subwaydj" target="_blank" class="fa fa-instagram fa-2x listlink"></a>
           </li>
-          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="link">
-            <a href="https://venmo.com/?txn=pay&recipients=SubwayDJ&audience=public" target="_blank" class="fa fa-money fa-4x listlink"></a>
+          <li data-row="1" data-col="4" data-sizex="1" data-sizey="1" class="link" id="col3">
+            <a href="https://venmo.com/?txn=pay&recipients=SubwayDJ&audience=public" target="_blank" class="fa fa-money fa-2x listlink"></a>
           </li>
-          <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="link">
-            <a href="https://twitter.com/Subway_DJ" target="_blank" class="fa fa-twitter fa-4x listlink"></a>
+          <li data-row="1" data-col="5" data-sizex="1" data-sizey="1" class="link" id="col3">
+            <a href="https://twitter.com/Subway_DJ" target="_blank" class="fa fa-twitter fa-2x listlink"></a>
           </li>
-          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="link">
-            <a href="http://subwaydj.tumblr.com/" target="_blank" class="fa fa-tumblr fa-4x listlink"></a>
+          <li data-row="1" data-col="6" data-sizex="1" data-sizey="1" class="link" id="col3">
+            <a href="http://subwaydj.tumblr.com/" target="_blank" class="fa fa-tumblr fa-2x listlink"></a>
           </li>
         </ul>
       </div>
@@ -60,7 +48,7 @@
       $(function() {
         gridtster = $(".gridster > ul").gridster({
           widget_margins: [10, 10],
-          widget_base_dimensions: [140, 140],
+          widget_base_dimensions: [50, 50],
           min_cols: 6
         }).data('gridster');
         $(".listlink").hover(
