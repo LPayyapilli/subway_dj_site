@@ -42,6 +42,8 @@ ul, ol {
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
     text-align: center;
     padding: 5px;
+    position: fixed;
+    float: right;
 }
 .gridster img {
 
@@ -127,5 +129,9 @@ li#col3.link.gs_w {
 }
 
 .eventlist {
+  text-align: center;
   font-family: "consolas";
+  position: fixed;
+  float: left;
+  padding: 5px;
 }
